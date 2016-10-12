@@ -1,0 +1,7 @@
+<phpunit bootstrap="bootstrap.php">
+    <testsuites>
+        <testsuite name="task2">
+            <file>tests/RunTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
