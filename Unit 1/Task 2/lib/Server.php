@@ -5,6 +5,6 @@
 
 namespace WS\Education\Unit1\Task2;
 
-class Server extends Socket {
+class Server {
 
 }
