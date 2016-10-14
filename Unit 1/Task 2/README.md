@@ -18,7 +18,15 @@
   * receive() : string
   * close()
   
-[Подсказка](https://habrahabr.ru/post/209864/)
+Используемые функции PHP при работе с сокетами:
+* socket_create
+* socket_bind
+* socket_listen
+* socket_accept
+* socket_recv
+* socket_write
+* socket_connect
+* socket_close
 
 **Проверка**
 
