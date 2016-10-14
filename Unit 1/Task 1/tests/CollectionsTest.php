@@ -122,4 +122,26 @@ class CollectionsTest extends PHPUnit_Framework_TestCase {
         catch (Exception $e) {
         }
     }
+
+    public function testTryEmptyGet() {
+        $stack = new Stack();
+        $stack->push(1);
+        $stack->pop();
+
+        try {
+            $stack->pop();
+            $this->fail("Need exception if try get element from empty collection");
+        } catch (Exception $e) {
+        }
+
+        $queue = new Queue();
+        $queue->push(1);
+        $queue->pop();
+
+        try {
+            $queue->pop();
+            $this->fail("Need exception if try get element from empty collection");
+        } catch (Exception $e) {
+        }
+    }
 }
