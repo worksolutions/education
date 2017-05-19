@@ -20,7 +20,7 @@ class Integer {
     /**
      * @return integer
      */
-    public function getVal() {
+    public function getValue() {
         return $this->value;
     }
 }
@@ -37,7 +37,7 @@ class CollectionsTest extends PHPUnit_Framework_TestCase {
         $stack->push(new Integer(3));
 
         $this->assertEquals(3, $stack->pop()->getValue());
-        $this->assertEquals(3, $stack->size());
+        $this->assertEquals(2, $stack->size());
     }
 
     public function testRemoveFromStack() {
